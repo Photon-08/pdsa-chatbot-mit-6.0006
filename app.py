@@ -38,7 +38,7 @@ qa_chain_2 = RetrievalQA.from_chain_type(
 
 
 
-st.header("Chatbot for IIT Madras BS Degree: Ask questions to 6.006 Intro to Algorithms by MIT")
+st.header("Chatbot for PDSA@IIT Madras[BSCS2002] Ask questions to 6.006 Intro to Algorithms Lecture Notes by MIT")
 st.caption("Developed by Indranil Bhattacharyya (21F1005840)")
 st.text("Please note that this is an experimental app, if you find something inappropiate report it to the developer")
 
