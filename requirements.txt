@@ -1,0 +1,5 @@
+langchain
+chromadb==0.3.29
+sentence-transformers
+huggingface-hub
+pysqlite3-binary
