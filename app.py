@@ -16,7 +16,7 @@ print("Db Fetched!")
 
 repo_id = "google/gemma-7b"
 llm = HuggingFaceHub(
-    repo_id=repo_id, model_kwargs={"temperature": 1},
+    repo_id=repo_id, model_kwargs={"temperature": 0.5, "max_length": 10000000},
     huggingfacehub_api_token="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"
 )
 
@@ -62,7 +62,9 @@ if prompt:
         st.write(prompt)
 
     with st.chat_message('assistant'):
-        st.write(result["result"])
+        ans = result["result"]
+        ans = ans[163:]
+        st.write(ans)
 
     key_name = 'question' + str(c)
     st.session_state[prompt] = result["result"]
