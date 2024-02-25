@@ -69,7 +69,7 @@ if prompt:
     with st.spinner('Wait for it...'):
     
         result = qa_chain({"query":prompt})
-        result_2 = qa_chain_2({"query":prompt})
+        #result_2 = qa_chain_2({"query":prompt})
     with st.chat_message("user"):
         st.write(prompt)
 
@@ -78,9 +78,9 @@ if prompt:
         ans_1 = ans_1[163:]
         st.write(ans_1)
         st.write("--------------")
-        st.write("Response from Model 2: ")
-        ans_2 = result_2['result']
-        st.write(ans_2)
+        #st.write("Response from Model 2: ")
+        #ans_2 = result_2['result']
+        #st.write(ans_2)
 
     key_name = 'question' + str(c)
     st.session_state[prompt] = result["result"]
