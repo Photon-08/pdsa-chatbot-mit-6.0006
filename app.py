@@ -78,7 +78,7 @@ if prompt:
         ans_1 = ans_1[163:]
         st.write(ans_1)
         st.write("--------------")
-        st.write("Response from Model 2":)
+        st.write("Response from Model 2: ")
         ans_2 = result_2['result']
         st.write(ans_2)
 
